@@ -8,4 +8,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="style_tv_request_title">
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:textColor">@color/blk</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="style_et_request_phone">
+        <item name="android:background">@drawable/custom_editText</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
 </resources>
