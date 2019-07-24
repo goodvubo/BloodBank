@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/circle_in_half_circle_shape">
+    android:background="@drawable/circle_in_half_circle_shape"
+    android:layout_gravity="bottom">
 
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
 
     <android.support.v7.widget.LinearLayoutCompat
         android:layout_width="match_parent"
@@ -16,6 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="O+"
+            android:textSize="28sp"
             android:gravity="center"
             />
 
@@ -27,57 +36,52 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Raise request for :"
-        android:layout_marginTop="80dp"/>
-
-    <android.support.v7.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
-        android:layout_height="52dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:layout_marginTop="50dp"/>
 
         <android.support.v7.widget.LinearLayoutCompat
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
             android:orientation="horizontal"
-            android:gravity="center_horizontal">
+            android:gravity="center_vertical">
 
-            <android.support.v7.widget.AppCompatCheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:button="@drawable/custom_checkbox"/>
+            <android.support.v7.widget.LinearLayoutCompat
+                style="@style/style_ccbox_request_bg"
+                android:background="@drawable/custom_editText">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="19sp"
-                android:layout_marginLeft="4dp"
-                android:text="Self"/>
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/custom_checkbox"/>
+
+                <TextView
+                    style="@style/style_ccbox_request_tv"
+                    android:text="Self"/>
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                style="@style/style_ccbox_request_bg"
+                android:background="@drawable/custom_editText_enabled">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:button="@drawable/custom_checkbox"/>
+
+                <TextView
+                    style="@style/style_ccbox_request_tv"
+                    android:textColor="#fff"
+                    android:text="Others"/>
+
+            </android.support.v7.widget.LinearLayoutCompat>
 
         </android.support.v7.widget.LinearLayoutCompat>
-
-        <android.support.v7.widget.LinearLayoutCompat
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal">
-
-            <android.support.v7.widget.AppCompatCheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:button="@drawable/custom_checkbox"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="19sp"
-                android:layout_marginLeft="4dp"
-                android:text="Other"/>
-
-        </android.support.v7.widget.LinearLayoutCompat>
-
-    </android.support.v7.widget.LinearLayoutCompat>
 
 
     <TextView
@@ -96,21 +100,30 @@
         style="@style/style_tv_request_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Location :"/>
+
+    <EditText
+        style="@style/style_et_request_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Enter location"/>
+
+    <TextView
+        style="@style/style_tv_request_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Request for :"/>
 
 
     <android.support.v7.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="52dp"
+        android:layout_height="50dp"
         android:orientation="horizontal"
         android:gravity="center_vertical">
 
         <android.support.v7.widget.LinearLayoutCompat
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal">
+            style="@style/style_ccbox_request_bg"
+            android:background="@drawable/custom_editText">
 
             <android.support.v7.widget.AppCompatCheckBox
                 android:layout_width="wrap_content"
@@ -118,32 +131,30 @@
                 android:button="@drawable/custom_checkbox"/>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="19sp"
-                android:layout_marginLeft="4dp"
-                android:text="Self"/>
+                style="@style/style_ccbox_request_tv"
+                android:text="Blood"/>
 
         </android.support.v7.widget.LinearLayoutCompat>
 
         <android.support.v7.widget.LinearLayoutCompat
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal">
+            android:layout_height="wrap_content"/>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            style="@style/style_ccbox_request_bg"
+            android:background="@drawable/custom_editText_enabled">
 
             <android.support.v7.widget.AppCompatCheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:checked="true"
                 android:button="@drawable/custom_checkbox"/>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="19sp"
-                android:layout_marginLeft="4dp"
-                android:text="Other"/>
+                style="@style/style_ccbox_request_tv"
+                android:textColor="#fff"
+                android:text="Plasma"/>
 
         </android.support.v7.widget.LinearLayoutCompat>
 
@@ -156,12 +167,39 @@
         android:layout_height="wrap_content"
         android:text="Number of bags"/>
 
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_tv_request_seek"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="@color/gry"
+            android:text="Maximum : 4"/>
+
+        <TextView
+            style="@style/style_tv_request_seek"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/bbank"
+            android:text="Needed : 2"/>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
     <android.support.v7.widget.AppCompatSeekBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="4dp"
         android:paddingBottom="4dp"
-        android:backgroundTint="#fb7e7a"/>
+        android:progressTint="@color/bbank"
+        android:thumbTint="#B8B4BA"
+        android:max="4"
+        android:progress="2"/>
 
-
+    </android.support.v7.widget.LinearLayoutCompat>
 </LinearLayout>

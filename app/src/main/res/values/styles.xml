@@ -9,17 +9,38 @@
     </style>
 
     <style name="style_tv_request_title">
-        <item name="android:paddingTop">4dp</item>
-        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
         <item name="android:textColor">@color/blk</item>
-        <item name="android:textSize">32sp</item>
+        <item name="android:textSize">24sp</item>
     </style>
 
     <style name="style_et_request_phone">
         <item name="android:background">@drawable/custom_editText</item>
-        <item name="android:paddingTop">4dp</item>
-        <item name="android:paddingBottom">4dp</item>
-        <item name="android:textSize">32sp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="style_tv_request_seek">
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="style_ccbox_request_bg">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">8</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="style_ccbox_request_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
     </style>
 
 </resources>

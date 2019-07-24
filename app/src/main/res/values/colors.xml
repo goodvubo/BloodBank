@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
+    <color name="bbank">#FB7F7B</color>
     <color name="myColor">#2196F3</color>
     <color name="blk">#000</color>
+    <color name="gry">#AEAEAE</color>
 </resources>
