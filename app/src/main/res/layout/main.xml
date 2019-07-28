@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/red">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red">
+
+
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="0dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".8"
+                    android:layout_height="match_parent"
+                    android:text="B"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/wht"
+                    android:gravity="right"
+                    android:paddingBottom="0dp"/>
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_weight=".03"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="HERO"
+                    android:textSize="22sp"
+                    android:textColor="@color/wht"
+                    android:gravity="left"
+                    android:paddingBottom="0dp"/>
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/red"
+        android:orientation="vertical">
+
+       <android.support.v7.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:orientation="horizontal"
+           android:background="@drawable/rect_rounded_corners"
+           android:layout_marginTop="20dp"
+           android:layout_marginBottom="10dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp">
+
+           <android.support.v7.widget.LinearLayoutCompat
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1"
+                   android:text="120966"
+                   android:textSize="32sp"
+                   android:textColor="@color/wht"
+                   android:gravity="center_horizontal"
+                   android:paddingTop="30dp"
+                   android:paddingBottom="0dp"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1"
+                   android:text="Donor's"
+                   android:textSize="22sp"
+                   android:textColor="@color/wht"
+                   android:gravity="center_horizontal"
+                   android:paddingTop="0dp"
+                   android:paddingBottom="30dp"/>
+
+           </android.support.v7.widget.LinearLayoutCompat>
+
+           <android.support.v7.widget.LinearLayoutCompat
+               android:layout_width="0dp"
+               android:layout_weight="1.1"
+               android:layout_height="match_parent"
+               android:layout_gravity="center_horizontal"
+               android:orientation="vertical">
+
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="40dp"
+                   android:layout_marginBottom="40dp"
+                   android:layout_marginLeft="0dp"
+                   android:layout_marginRight="20dp"
+                   android:background="@drawable/rect_rounded_horizontal"
+                   android:gravity="center"
+                   android:text="FIND DONOR"
+                   android:textStyle="bold"
+                   android:textColor="@color/red"
+                   android:textSize="18dp"/>
+
+           </android.support.v7.widget.LinearLayoutCompat>
+
+       </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/rect_rounded_corners"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="20976"
+                    android:textSize="32sp"
+                    android:textColor="@color/wht"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="0dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Request"
+                    android:textSize="22sp"
+                    android:textColor="@color/wht"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="30dp"/>
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_weight="1.1"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/rect_rounded_horizontal"
+                    android:gravity="center"
+                    android:text="SEE REQUEST"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:textSize="18dp"/>
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.1"
+        android:orientation="vertical"
+        android:background="@color/wht">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="match_parent"
+                android:text="EXPLORE LATEST FEED"
+                android:textStyle="bold"
+                android:textColor="@color/blk"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:text="Post Update"
+                android:textStyle="bold"
+                android:textColor="@color/bbank"
+                android:textSize="16sp"
+                android:gravity="center"/>
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>
